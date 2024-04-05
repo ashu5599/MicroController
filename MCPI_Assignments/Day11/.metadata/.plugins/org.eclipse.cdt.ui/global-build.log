@@ -1,0 +1,1279 @@
+15:08:22 **** Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/itm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/itm.d" -MT"Src/itm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/itm.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/system_stm32f4xx.o"
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "demo01.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo01/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo01.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo01.elf
+ 
+arm-none-eabi-size  demo01.elf 
+arm-none-eabi-objdump -h -S demo01.elf  > "demo01.list"
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo01.list
+ 
+15:08:38 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+15:11:05 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+15:11:05 **** Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/itm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/itm.d" -MT"Src/itm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/itm.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/system_stm32f4xx.o"
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/timer.o"
+../Src/main.c:27:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   27 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+15:11:29 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+15:11:30 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/itm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/itm.d" -MT"Src/itm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/itm.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/system_stm32f4xx.o"
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/timer.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+15:11:38 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+15:13:32 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+15:13:32 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+15:13:51 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+15:13:52 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+15:13:57 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+15:14:50 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+15:14:50 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+15:14:56 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+15:16:41 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+15:16:41 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+15:16:48 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+15:17:24 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+15:18:41 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+15:18:41 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+15:18:46 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+15:20:03 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+15:22:24 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+15:22:24 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+15:22:28 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+15:29:42 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+15:32:08 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+15:32:09 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1080	      4	   1564	   2648	    a58	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+15:32:14 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1080	      4	   1564	   2648	    a58	demo02.elf
+Finished building: default.size.stdout
+ 
+15:35:24 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+15:35:24 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+15:35:27 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+16:06:37 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+16:06:38 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:36:9: warning: statement with no effect [-Wunused-value]
+   36 |         for(duty; duty<=100;duty++)
+      |         ^~~
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1072	      4	   1564	   2640	    a50	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+16:06:38 **** Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/itm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/itm.d" -MT"Src/itm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/itm.o"
+arm-none-eabi-gcc "../Src/iwdg.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/iwdg.d" -MT"Src/iwdg.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/iwdg.o"
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/switch.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/switch.d" -MT"Src/switch.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/switch.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/system_stm32f4xx.o"
+../Src/main.c:28:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   28 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "demo03.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo03/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo03.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo03.elf
+ 
+arm-none-eabi-size  demo03.elf 
+arm-none-eabi-objdump -h -S demo03.elf  > "demo03.list"
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo03.list
+ 
+16:06:48 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1072	      4	   1564	   2640	    a50	demo02.elf
+Finished building: default.size.stdout
+ 
+16:09:04 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+16:09:05 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:36:9: warning: statement with no effect [-Wunused-value]
+   36 |         for(duty; duty<=100;duty+=10)
+      |         ^~~
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1072	      4	   1564	   2640	    a50	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+16:09:05 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+16:09:12 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1072	      4	   1564	   2640	    a50	demo02.elf
+Finished building: default.size.stdout
+ 
+16:11:47 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+16:11:48 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+16:11:48 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+16:11:59 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1076	      4	   1564	   2644	    a54	demo02.elf
+Finished building: default.size.stdout
+ 
+17:29:44 **** Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+17:29:45 **** Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:36:5: error: too few arguments to function 'SwitchInit'
+   36 |     SwitchInit();
+      |     ^~~~~~~~~~
+In file included from ../Src/main.c:24:
+../Inc/switch.h:12:6: note: declared here
+   12 | void SwitchInit(uint32_t pin);
+      |      ^~~~~~~~~~
+make: *** [Src/subdir.mk:34: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:29:47 **** Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+17:30:18 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:36:5: error: too few arguments to function 'SwitchInit'
+   36 |     SwitchInit();
+      |     ^~~~~~~~~~
+In file included from ../Src/main.c:24:
+../Inc/switch.h:12:6: note: declared here
+   12 | void SwitchInit(uint32_t pin);
+      |      ^~~~~~~~~~
+make: *** [Src/subdir.mk:34: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:31:54 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+17:31:54 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:33:5: error: too few arguments to function 'SwitchInit'
+   33 |     SwitchInit();
+      |     ^~~~~~~~~~
+In file included from ../Src/main.c:24:
+../Inc/switch.h:12:6: note: declared here
+   12 | void SwitchInit(uint32_t pin);
+      |      ^~~~~~~~~~
+make: *** [Src/subdir.mk:34: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:31:56 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+17:41:39 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+17:41:40 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/opt/st/stm32cubeide_1.15.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: ./Src/main.o: in function `main':
+/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/Debug/../Src/main.c:33: undefined reference to `SwitchInit'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:63: demo02.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:41:42 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+17:42:00 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+17:42:01 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:33:5: warning: 'duty' is used uninitialized [-Wuninitialized]
+   33 |     SwitchInit(duty);
+      |     ^~~~~~~~~~~~~~~~
+../Src/main.c:30:9: note: 'duty' was declared here
+   30 |     int duty ;
+      |         ^~~~
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/opt/st/stm32cubeide_1.15.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld: ./Src/main.o: in function `main':
+/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/Debug/../Src/main.c:33: undefined reference to `SwitchInit'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:63: demo02.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:42:02 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+17:54:28 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+17:54:28 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:40:17: error: 'TIM_TypeDef' has no member named 'CCR'; did you mean 'CCER'?
+   40 |           TIM8->CCR=duty;
+      |                 ^~~
+      |                 CCER
+make: *** [Src/subdir.mk:34: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:54:29 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+17:55:00 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+17:55:01 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/itm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/itm.d" -MT"Src/itm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/itm.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/switch.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/switch.d" -MT"Src/switch.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/switch.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/system_stm32f4xx.o"
+arm-none-eabi-gcc "../Src/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/timer.d" -MT"Src/timer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/timer.o"
+../Src/main.c: In function 'main':
+../Src/main.c:40:17: error: 'TIM_TypeDef' has no member named 'CCR'; did you mean 'CCER'?
+   40 |           TIM8->CCR=duty;
+      |                 ^~~
+      |                 CCER
+make: *** [Src/subdir.mk:37: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:55:02 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+17:55:33 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+17:55:34 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:37:9: warning: 'duty' is used uninitialized [-Wuninitialized]
+   37 |       if(duty<=90){
+      |         ^
+../Src/main.c:30:9: note: 'duty' was declared here
+   30 |     int duty ;
+      |         ^~~~
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1360	      4	   1572	   2936	    b78	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+17:55:35 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+17:57:19 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+17:57:20 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1364	      4	   1572	   2940	    b7c	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+17:57:21 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+18:00:30 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+18:00:31 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1404	      4	   1572	   2980	    ba4	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:00:31 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+18:00:37 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1404	      4	   1572	   2980	    ba4	demo02.elf
+Finished building: default.size.stdout
+ 
+18:01:16 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+18:01:16 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1392	      4	   1572	   2968	    b98	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:01:17 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+18:01:21 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1392	      4	   1572	   2968	    b98	demo02.elf
+Finished building: default.size.stdout
+ 
+18:02:12 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+18:02:12 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1364	      4	   1572	   2940	    b7c	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:02:13 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+18:02:17 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1364	      4	   1572	   2940	    b7c	demo02.elf
+Finished building: default.size.stdout
+ 
+18:02:44 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+18:02:44 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1364	      4	   1572	   2940	    b7c	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:02:45 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+18:02:49 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1364	      4	   1572	   2940	    b7c	demo02.elf
+Finished building: default.size.stdout
+ 
+18:03:40 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+18:03:40 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1404	      4	   1572	   2980	    ba4	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:03:41 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+18:03:46 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1404	      4	   1572	   2980	    ba4	demo02.elf
+Finished building: default.size.stdout
+ 
+18:04:30 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+18:04:30 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:52:1: error: break statement not within loop or switch
+   52 | break;
+      | ^~~~~
+make: *** [Src/subdir.mk:37: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:04:31 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+18:04:34 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:52:1: error: break statement not within loop or switch
+   52 | break;
+      | ^~~~~
+make: *** [Src/subdir.mk:37: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:04:55 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+18:04:56 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:52:1: error: break statement not within loop or switch
+   52 | break;
+      | ^~~~~
+make: *** [Src/subdir.mk:37: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:04:56 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+18:05:06 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+18:05:07 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1392	      4	   1572	   2968	    b98	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:05:08 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+18:05:52 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+18:05:52 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1392	      4	   1572	   2968	    b98	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:05:53 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+18:05:58 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1392	      4	   1572	   2968	    b98	demo02.elf
+Finished building: default.size.stdout
+ 
+18:08:07 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+18:08:08 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1400	      4	   1572	   2976	    ba0	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:08:09 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+18:10:54 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+18:10:55 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:28:11: warning: statement with no effect [-Wunused-value]
+   28 |           0
+      |           ^
+../Src/main.c:28:12: error: expected ';' before '}' token
+   28 |           0
+      |            ^
+      |            ;
+   29 |       }
+      |       ~     
+make: *** [Src/subdir.mk:37: Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:10:55 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+18:11:05 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+18:11:06 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1404	      4	   1572	   2980	    ba4	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:11:07 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+18:17:57 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1404	      4	   1572	   2980	    ba4	demo02.elf
+Finished building: default.size.stdout
+ 
+18:19:31 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+18:19:31 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1396	      4	   1572	   2972	    b9c	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:19:32 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+18:19:34 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1396	      4	   1572	   2972	    b9c	demo02.elf
+Finished building: default.size.stdout
+ 
+18:20:37 **** Incremental Build of configuration Debug for project demo01 ****
+make -j16 all 
+arm-none-eabi-size  demo01.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1020	      0	   1568	   2588	    a1c	demo01.elf
+Finished building: default.size.stdout
+ 
+18:20:38 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1388	      4	   1572	   2964	    b94	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:20:39 **** Incremental Build of configuration Debug for project demo03 ****
+make -j16 all 
+arm-none-eabi-size  demo03.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1692	      4	   1564	   3260	    cbc	demo03.elf
+Finished building: default.size.stdout
+ 
+18:20:48 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1388	      4	   1572	   2964	    b94	demo02.elf
+Finished building: default.size.stdout
+ 
+18:25:33 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1388	      4	   1572	   2964	    b94	demo02.elf
+Finished building: default.size.stdout
+ 
+18:28:42 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1388	      4	   1572	   2964	    b94	demo02.elf
+Finished building: default.size.stdout
+ 
+18:29:03 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1388	      4	   1572	   2964	    b94	demo02.elf
+Finished building: default.size.stdout
+ 
+18:29:52 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1388	      4	   1572	   2964	    b94	demo02.elf
+Finished building: default.size.stdout
+ 
+18:31:18 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1392	      4	   1572	   2968	    b98	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:32:42 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1236	      0	   1568	   2804	    af4	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:33:16 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1236	      0	   1568	   2804	    af4	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:38:29 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:22:7: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+   22 |       while(exti0_flag==0)
+      |       ^~~~~
+../Src/main.c:24:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+   24 |           exti0_flag=0;
+      |           ^~~~~~~~~~
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1412	      4	   1572	   2988	    bac	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:39:06 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:22:7: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+   22 |       while(exti0_flag==0);
+      |       ^~~~~
+../Src/main.c:23:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+   23 |           duty=duty+10;
+      |           ^~~~
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1412	      4	   1572	   2988	    bac	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:41:33 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:22:7: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+   22 |       while(exti0_flag==0);
+      |       ^~~~~
+../Src/main.c:23:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+   23 |           duty=duty+10;
+      |           ^~~~
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1412	      4	   1572	   2988	    bac	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:41:43 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1412	      4	   1572	   2988	    bac	demo02.elf
+Finished building: default.size.stdout
+ 
+18:44:36 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:22:7: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+   22 |       while(exti0_flag==0);
+      |       ^~~~~
+../Src/main.c:23:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+   23 |           duty=duty+5;
+      |           ^~~~
+arm-none-eabi-gcc -o "demo02.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sunbeam/STM32CubeIDE/workspace_1.15.0/Day11/demo02/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo02.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo02.elf
+ 
+arm-none-eabi-size  demo02.elf 
+arm-none-eabi-objdump -h -S demo02.elf  > "demo02.list"
+   text	   data	    bss	    dec	    hex	filename
+   1412	      4	   1572	   2988	    bac	demo02.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo02.list
+ 
+18:44:50 **** Incremental Build of configuration Debug for project demo02 ****
+make -j16 all 
+arm-none-eabi-size  demo02.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1412	      4	   1572	   2988	    bac	demo02.elf
+Finished building: default.size.stdout
+ 

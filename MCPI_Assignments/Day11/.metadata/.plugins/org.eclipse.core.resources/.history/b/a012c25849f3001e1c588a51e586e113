@@ -1,0 +1,39 @@
+
+
+#include <stdint.h>
+#include <stdio.h>
+#include "stm32f4xx.h"
+#include "system_stm32f4xx.h"
+
+#include "switch.h"
+#include "timer.h"
+
+
+int main(void)
+{
+    int duty=0;
+    SystemInit();
+    TimerInit();
+    SwitchInit(SWITCH);
+    while(1) {
+      while(exti0_flag==0)
+    	  ;
+      if(duty<=100){
+    	  exti0_flag=0;
+    	  duty+=10;
+    	  TIM8->CCR1=duty;
+    	  DelayMs(70);
+
+      }
+
+      else if(duty>=100){
+      	exti0_flag=0;
+      	    	  duty=10;
+      	    	  TIM8->CCR1=duty;
+      	    	  DelayMs(70);
+      }
+
+      }
+
+	return 0;
+	}
